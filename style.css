@@ -1,4 +1,95 @@
-body {
-    background-color: red;
-    color: white;
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+body{
+   border: solid 60px transparent;
+    z-index: 10;
+    display: inline-block;
+    border-image: url('letsgo.png') 25% round ;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    display: flex;
+    overflow: hidden;
+    font-family: 'Prata', serif;;
+    
 }
+span{
+    color: red;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0; /* Space from this element (entire page) and others*/
+    padding: 0; /*space from content and border*/
+    box-sizing: border-box;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -10;
+  }
+
+  .imgnico > img{
+    
+    animation: rotation 3s infinite linear;
+  }
+
+  .imgnico{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  h1{
+    text-align: center;
+  }
+  p{
+    width: 30ch;
+    background-color: rgb(229, 233, 237, 0.3);
+    font-size: x-large;
+    border: solid 100px transparent;
+    border-image: url('bordersanta.png') 25% round ;
+  }
+
+audio{
+    position: absolute;
+    right: 30px;
+    bottom: 60px;;
+}
+p{
+    color: red;
+}
+.santa{
+    height: 38%;
+    position: absolute;
+    bottom:30px;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-name: satanas;
+    
+}
+@keyframes satanas {
+    0%   { left:0px; right:0px;}
+    75%  {left:200px; right: 1000px; top: 400px;;}
+    100% {left:0px; right:0px;}
+}
+
+
+  .snowflake {
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial;
+    text-shadow: 0 0 1px #000;
+  }
+  
+  @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
